@@ -36,7 +36,7 @@
         </div>
       </div>
 
-      <div v-for="(answer, index) in form.wrongAnswers" :key="index" class="mb-6">
+      <div v-for="(_, index) in form.wrongAnswers" :key="index" class="mb-6">
         <label class="block text-sm font-medium text-gray-700" :for="'wrong-answer-' + index">Wrong answer {{ index + 1 }}</label>
         <div class="relative">
           <textarea
@@ -134,7 +134,7 @@ export default defineComponent({
         }
       };
 
-      recognition.onerror = (event: SpeechRecognitionError) => {
+      recognition.onerror = (event: any) => {
         console.error('Speech recognition error', event.error);
       };
     };

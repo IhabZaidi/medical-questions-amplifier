@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/dom-speech-recognition": "^0.0.4",
     "@vueuse/core": "^10.11.0",
     "vue": "^3.4.21"
   },
